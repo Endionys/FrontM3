@@ -1,0 +1,115 @@
+*{  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    Font-size:15px;
+    font-family: "Lexend Deca";
+    color: hsl(0, 0%, 95%);
+}
+
+/* width 920 height 500 */
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+ }
+
+
+.container{
+    display: flex;
+    align-items: center;
+    width: 920px;
+    height: 500px; 
+        
+}
+.sedans,.suv,.luxury{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    background-color: blue;
+    padding-left:50px;
+    padding-right: 50px;
+    
+}
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+}
+.suv{
+   
+background-color: hsl(184, 100%, 22%);
+}
+.luxury{
+background-color: hsl(179, 100%, 13%);
+border-radius: 0px 10px 10px 0px;
+}
+p{
+    margin-top: -10px;
+    line-height: 30px;
+    font-weight:400;
+    Font-size:15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    
+}
+h2{
+    font-family:"Big Shoulders Display";
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+    }
+button{
+    width: 60%;
+    height: 10%;
+    background-color: hsla(0, 0%, 95%);
+    border: solid hsla(0, 0%, 95%);
+    border-radius: 160px; 
+   } 
+   .luxury button{
+    color: hsl(179, 100%, 13%);
+   }
+   .suv button{
+    color:hsl(184, 100%, 22%);
+   }
+   .sedans button{
+    color:hsl(31, 77%, 52%) ;
+   }
+
+   button:hover{
+    background-color: transparent;
+    color: white;
+}
+@media (max-width:375px){
+    article{
+        height: max-content;
+    }
+    #red{
+        width: 375px;
+        margin:15px 0 ;
+        display: flex;
+        justify-content: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width:80%;
+        height: 1000px;
+    
+}
+    p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .luxury{
+        border-radius: 0 0 10px 10px;
+    }
+    .sedans{
+        border-radius: 10px 10px 0 0 ;
+    }
+}
