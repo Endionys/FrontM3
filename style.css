@@ -5,6 +5,7 @@
     Font-size:15px;
     font-family: "Lexend Deca";
     color: hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%);
 }
 
 /* width 920 height 500 */
@@ -15,6 +16,7 @@ article{
     align-items: center;
     width: 100%;
     height: 100vh;
+    background-color: hsl(0, 0%, 95%);
  }
 
 
@@ -91,6 +93,7 @@ button{
         margin:15px 0 ;
         display: flex;
         justify-content: center;
+        background-color: hsl(0, 0%, 95%);
     }
     .container{
         display: flex;
